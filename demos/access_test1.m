@@ -1,4 +1,12 @@
 % ACCESS_TEST1 - comparison of different styles of access
+% 
+% Loads data and demonstrates basic access, CF-compliant data, and
+% geographic oriented data. Demonstrates variable access, ncvariable
+% contructor and creating a ncgeovariable.
+% 
+
+% MOREON=get(0,'more');
+% more on
 echo on
 
 url = 'http://dods.mbari.org/cgi-bin/nph-nc/data/ssdsdata/deployments/m1/200810/OS_M1_20081008_TS.nc'
@@ -51,3 +59,4 @@ geo{'TEMP'}(1:10,1:2).data  % 10x2 (works with patch)
 geo{'TEMP'}(1:10,1:2).grid  % structure with subsetted grid
 
 echo off
+% more(MOREON)

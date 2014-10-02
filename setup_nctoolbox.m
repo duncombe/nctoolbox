@@ -4,7 +4,7 @@ home = fileparts(which(mfilename));
 addpath(fullfile(home, 'java'));
 addpath(fullfile(home, 'cdm'));
 
-% Added so that we can swap out utitlies modules for different user groups, 
+% Added so that we can swap out utilities modules for different user groups, 
 % like sura shelf_hypoxia
 addpath(genpath(fullfile(home, 'cdm', 'utilities'))); 
 
